@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гродненский колледж бизнеса и права</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Emblem_of_Grodno.svg/1200px-Emblem_of_Grodno.svg.png" alt="Логотип" class="logo-img">
+                <h1>Гродненский колледж бизнеса и права</h1>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about">О колледже</a></li>
+                    <li><a href="#specialties">Специальности</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><button class="btn btn-outline" id="login-btn">Вход</button></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-button" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#about">О колледже</a></li>
+                <li><a href="#specialties">Специальности</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><button class="btn btn-small" id="mobile-login-btn">Вход</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Качественное образование - успешное будущее</h2>
+                <p>Гродненский колледж бизнеса и права - современное учебное заведение, готовящее специалистов в области экономики, права и информационных технологий.</p>
+                <div class="hero-buttons">
+                    <a href="#specialties" class="btn btn-primary btn-large">
+                        <i class="fas fa-graduation-cap"></i> Наши специальности
+                    </a>
+                    <a href="#contacts" class="btn btn-secondary btn-large">
+                        <i class="fas fa-map-marker-alt"></i> Как нас найти
+                    </a>
+                    <button class="btn btn-accent btn-large" id="apply-btn">
+                        <i class="fas fa-paper-plane"></i> Подать заявку
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2>О колледже</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Частное учреждение образования «Гродненский колледж бизнеса и права» - это современное учебное заведение, которое сочетает в себе лучшие традиции образования и инновационные подходы к обучению.</p>
+                        <p>Наш колледж предлагает качественное среднее специальное образование, ориентированное на практическую подготовку специалистов, востребованных на рынке труда.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Более 1000 выпускников</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Опытные преподаватели</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-building"></i>
+                                <span>Современные аудитории</span>
+                            </div>
+                        </div>
+                        <div class="about-buttons">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-book-open"></i> Подробнее о нас
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-download"></i> Скачать брошюру
+                            </button>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://belarus24.by/wp-content/uploads/2022/02/2-1-1024x683.jpg" alt="Здание колледжа">
+                        <button class="btn btn-play" id="video-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specialties" class="section bg-light">
+            <div class="section-container">
+                <h2>Наши специальности</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="economy">Экономические</button>
+                    <button class="tab-btn" data-tab="law">Юридические</button>
+                    <button class="tab-btn" data-tab="it">IT-специальности</button>
+                </div>
+                <div class="specialties-grid">
+                    <div class="specialty-card" data-category="economy">
+                        <div class="specialty-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Экономика и бухгалтерский учет</h3>
+                        <p>Обучение ведению бухгалтерского учета и экономическому анализу деятельности предприятий.</p>
+                        <div class="specialty-footer">
+                            <span class="duration"><i class="fas fa-clock"></i> 2 года 10 месяцев</span>
+                            <button class="btn btn-small btn-accent">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="specialty-card" data-category="economy">
+                        <div class="specialty-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Бизнес и администрирование</h3>
+                        <p>Обучение организации и управлению бизнес-процессами на предприятии.</p>
+                        <div class="specialty-footer">
+                            <span class="duration"><i class="fas fa-clock"></i> 2 года 10 месяцев</span>
+                            <button class="btn btn-small btn-accent">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="specialty-card" data-category="law">
+                        <div class="specialty-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Правоведение</h3>
+                        <p>Подготовка специалистов в области права для работы в юридических службах организаций.</p>
+                        <div class="specialty-footer">
+                            <span class="duration"><i class="fas fa-clock"></i> 2 года 10 месяцев</span>
+                            <button class="btn btn-small btn-accent">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="specialty-card" data-category="it">
+                        <div class="specialty-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Программное обеспечение информационных технологий</h3>
+                        <p>Подготовка программистов для разработки и сопровождения программного обеспечения.</p>
+                        <div class="specialty-footer">
+                            <span class="duration"><i class="fas fa-clock"></i> 3 года 6 месяцев</span>
+                            <button class="btn btn-small btn-accent">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-list-alt"></i> Все специальности
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="section-container">
+                <h2>Галерея</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://www.sb.by/upload/iblock/1e6/1e6a9c1e5a8b8c2e5f8e3a8e5f8e3a8e.jpg" alt="Учебный процесс">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-gallery">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.grodno.by/wp-content/uploads/2021/09/students.jpg" alt="Студенты">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-gallery">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://edu.gov.by/uploads/files/news/2023/01/grodno-college.jpg" alt="Библиотека">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-gallery">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.grodno.by/wp-content/uploads/2021/06/college-building.jpg" alt="Здание">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-gallery">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://belarus24.by/wp-content/uploads/2022/02/students-lab.jpg" alt="Лаборатория">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-gallery">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.sb.by/upload/iblock/1e6/1e6a9c1e5a8b8c2e5f8e3a8e5f8e3a8e.jpg" alt="Мероприятие">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-gallery">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-images"></i> Показать еще
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="section bg-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Новости</h2>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-rss"></i> Все новости
+                    </button>
+                </div>
+                <div class="news-container">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://www.grodno.by/wp-content/uploads/2021/09/open-doors.jpg" alt="День открытых дверей">
+                            <span class="news-badge">Абитуриенту</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>День открытых дверей</h3>
+                            <p class="news-date"><i class="far fa-calendar-alt"></i> 15 мая 2023</p>
+                            <p>Приглашаем абитуриентов и их родителей на День открытых дверей, который состоится 25 мая в 15:00 в главном корпусе колледжа.</p>
+                            <div class="news-footer">
+                                <a href="#" class="read-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                                <div class="news-actions">
+                                    <button class="btn-like"><i class="far fa-heart"></i> 24</button>
+                                    <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://belarus24.by/wp-content/uploads/2022/02/conference.jpg" alt="Научная конференция">
+                            <span class="news-badge">Наука</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Научная конференция</h3>
+                            <p class="news-date"><i class="far fa-calendar-alt"></i> 10 мая 2023</p>
+                            <p>Студенты колледжа приняли участие в Республиканской научно-практической конференции по экономике и праву.</p>
+                            <div class="news-footer">
+                                <a href="#" class="read-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                                <div class="news-actions">
+                                    <button class="btn-like"><i class="far fa-heart"></i> 18</button>
+                                    <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://www.sb.by/upload/iblock/1e6/sport-event.jpg" alt="Спортивные достижения">
+                            <span class="news-badge">Спорт</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Спортивные достижения</h3>
+                            <p class="news-date"><i class="far fa-calendar-alt"></i> 5 мая 2023</p>
+                            <p>Команда колледжа заняла первое место в городских соревнованиях по волейболу среди учебных заведений.</p>
+                            <div class="news-footer">
+                                <a href="#" class="read-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                                <div class="news-actions">
+                                    <button class="btn-like"><i class="far fa-heart"></i> 32</button>
+                                    <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="section">
+            <div class="section-container">
+                <h2>Контакты</h2>
+                <div class="contacts-container">
+                    <div class="contact-info">
+                        <h3>Наши контакты</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> г. Гродно, ул. Октябрьская, 5</p>
+                        <p><i class="fas fa-phone"></i> +375 (152) 72-13-45</p>
+                        <p><i class="fas fa-envelope"></i> info@gkbp.by</p>
+                        <p><i class="fas fa-clock"></i> Пн-Пт: 8:30 - 17:30</p>
+                        
+                        <div class="contact-form">
+                            <h4>Остались вопросы?</h4>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Ваше имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Ваш email" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Ваш вопрос" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <i class="fas fa-paper-plane"></i> Отправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.692635143921!2d23.8298763158597!3d53.6889669801006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDQxJzIwLjMiTiAyM8KwNDknNTQuNiJF!5e0!3m2!1sru!2sby!4v1620000000000!5m2!1sru!2sby" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section bg-primary">
+            <div class="section-container">
+                <div class="cta-content">
+                    <h2>Готовы стать частью нашего колледжа?</h2>
+                    <p>Подайте заявку на поступление прямо сейчас и сделайте первый шаг к успешной карьере!</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-light btn-large">
+                            <i class="fas fa-file-alt"></i> Подать заявку
+                        </button>
+                        <button class="btn btn-outline-light btn-large">
+                            <i class="fas fa-question-circle"></i> Задать вопрос
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Emblem_of_Grodno.svg/1200px-Emblem_of_Grodno.svg.png" alt="Логотип" class="footer-logo-img">
+                <h3>Гродненский колледж бизнеса и права</h3>
+                <p>Качественное образование для успешного будущего</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Быстрые ссылки</h4>
+                <ul>
+                    <li><a href="#about">О колледже</a></li>
+                    <li><a href="#specialties">Специальности</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-map-marker-alt"></i> г. Гродно, ул. Октябрьская, 5</p>
+                <p><i class="fas fa-phone"></i> +375 (152) 72-13-45</p>
+                <p><i class="fas fa-envelope"></i> info@gkbp.by</p>
+            </div>
+            <div class="footer-subscribe">
+                <h4>Подписаться на новости</h4>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn btn-accent btn-block">
+                        <i class="fas fa-paper-plane"></i> Подписаться
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Частное учреждение образования «Гродненский колледж бизнеса и права». Все права защищены.</p>
+            <div class="footer-legal">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Вход в систему</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Войти</button>
+                <div class="auth-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="apply-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Подача заявки</h2>
+            <form class="apply-form">
+                <div class="form-group">
+                    <label for="apply-name">ФИО</label>
+                    <input type="text" id="apply-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="apply-email">Email</label>
+                    <input type="email" id="apply-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="apply-phone">Телефон</label>
+                    <input type="tel" id="apply-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="apply-specialty">Специальность</label>
+                    <select id="apply-specialty" required>
+                        <option value="">Выберите специальность</option>
+                        <option value="economy">Экономика и бухгалтерский учет</option>
+                        <option value="law">Правоведение</option>
+                        <option value="it">Программное обеспечение информационных технологий</option>
+                        <option value="business">Бизнес и администрирование</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="apply-message">Дополнительная информация</label>
+                    <textarea id="apply-message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
